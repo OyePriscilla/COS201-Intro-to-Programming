@@ -645,7 +645,5 @@ export const quizData: QuizData = {
       "options": ["Encapsulation", "Abstraction", "Inheritance", "Modularization"],
       "answer": 3
     }
-  ],
-
- 
+  ]
 };

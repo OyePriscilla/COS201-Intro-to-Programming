@@ -30,6 +30,8 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
+
+// @ts-ignore
       const user = result.user;
 
       // Google users are always verified
