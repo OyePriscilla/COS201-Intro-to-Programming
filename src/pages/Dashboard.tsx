@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { auth } from "../firebase/firebase";
 import { signOut } from "firebase/auth";
 import { Link } from "react-router-dom";
-import PaystackButton from "../components/PayStackButton";
 
 interface Lesson {
   id: string;
@@ -205,20 +204,7 @@ export default function Dashboard() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Support Section */}
-      <div style={{ marginTop: "60px", borderTop: "1px solid #eee", paddingTop: "30px", textAlign: "center" }}>
-        <h3>Support This Learning Platform</h3>
-        <p style={{ color: "#666" }}>
-          If this platform helps you learn, you can support its development.
-        </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: "15px", marginTop: "20px", flexWrap: "wrap" }}>
-          <PaystackButton amount={500} label="☕ ₦500" />
-          <PaystackButton amount={1000} label="☕ ₦1000" />
-          <PaystackButton amount={2000} label="☕ ₦2000" />
-        </div>
-      </div>
+      </div>   
     </div>
   );
 }
